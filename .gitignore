@@ -1,0 +1,11 @@
+.next
+.yarn
+node_modules
+old
+api
+.env
+hooks
+lib
+prisma
+tsconfig.tsbuildinfo
+tree.txt
