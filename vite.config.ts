@@ -8,7 +8,7 @@ export default defineConfig({
       '@': '/src',
     },
   },
-  base: '/',
+  base: '/portfolio/',
   build: {
     outDir: 'dist',
     sourcemap: false,
