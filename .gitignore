@@ -1,12 +1,3 @@
-.next
-.yarn
+README.md
 node_modules
-old
-api
-.env
-hooks
-lib
-prisma
-tsconfig.tsbuildinfo
-tree.txt
-public\og-image.png
+public\robots.txt
