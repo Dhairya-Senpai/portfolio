@@ -3,8 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <script>
-      sessionStorage.setItem('redirect', location.pathname + location.search + location.hash);
-      location.replace(location.origin + '/portfolio/');
+      // Get the current path
+      var pathSegmentsToKeep = 1; // Change to 0 if it's username.github.io (not a project page)
+      var l = window.location;
+      
+      // Redirect to index.html with the path as a query parameter
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
     </script>
   </head>
   <body></body>
