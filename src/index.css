@@ -5,8 +5,8 @@
 :root {
   --accent: #e53935;
   --accent-orange: #ff6b35;
-  --bg-dark: #0a0a0a;
-  --bg-card: #141414;
+  --bg-dark: #000000;
+  --bg-card: #000000;
   --text-primary: #ffffff;
   --text-secondary: #a0a0a0;
 }

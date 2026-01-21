@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+// import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Navigation from '@/components/navigation'
 import HeroSection from '@/components/hero-section'
 import ProjectsSection from '@/components/projects-section'
@@ -10,7 +11,7 @@ import ContactSection from '@/components/contact-section'
 
 function HomePage() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a]">
+    <div className="min-h-screen bg-[#0000000]">
       <HeroSection />
       {/* <ChatBot /> */}
     </div>
@@ -19,7 +20,7 @@ function HomePage() {
 
 function ProjectsPage() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] pt-24 pb-20">
+    <div className="min-h-screen bg-[#000000] pt-24 pb-20">
       <div className="max-w-[1200px] mx-auto px-6">
         <ProjectsSection />
       </div>
@@ -29,7 +30,7 @@ function ProjectsPage() {
 
 function StoryPage() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] pt-24 pb-20">
+    <div className="min-h-screen bg-[#000000] pt-24 pb-20">
       <div className="max-w-[1200px] mx-auto px-6">
         <TimelineSection />
       </div>
@@ -39,7 +40,7 @@ function StoryPage() {
 
 function BlogListPage() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] pt-24 pb-20">
+    <div className="min-h-screen bg-[#000000] pt-24 pb-20">
       <div className="max-w-[1200px] mx-auto px-6">
         <BlogSection />
       </div>
@@ -49,7 +50,7 @@ function BlogListPage() {
 
 function BlogPostViewPage() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] pt-24 pb-20">
+    <div className="min-h-screen bg-[#000000] pt-24 pb-20">
       <div className="max-w-[800px] mx-auto px-6">
         <BlogPostPage />
       </div>
@@ -59,7 +60,7 @@ function BlogPostViewPage() {
 
 function ContactPage() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] pt-24 pb-20">
+    <div className="min-h-screen bg-[#000000] pt-24 pb-20">
       <div className="max-w-[1200px] mx-auto px-6">
         <ContactSection />
       </div>
@@ -69,8 +70,8 @@ function ContactPage() {
 
 export default function App() {
   return (
-    <Router>
-      <div className="bg-[#0a0a0a] text-white min-h-screen">
+    <Router basename="/portfolio/">
+      <div className="bg-[#000000] text-white min-h-screen">
         <Navigation />
         <main>
           <Routes>

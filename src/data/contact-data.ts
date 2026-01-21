@@ -38,15 +38,12 @@ export const contactMethods: ContactMethod[] = [
     icon: Globe,
     label: 'Portfolio',
     value: 'Go to online portfolio website',
-    href: '/',
+    href: '/portfolio/',
   },
 ]
 
 export const lookingFor: LookingForItem[] = [
   { icon: Cpu, label: 'Cybersecurity Projects' },
   { icon: Code, label: 'Full Stack Development' },
-  { icon: Users, label: 'Early-stage Consultancy' },
-  { icon: MessageCircle, label: 'Technical Mentoring' },
   { icon: FolderOpen, label: 'Open Source Collaborations' },
-  { icon: Mic, label: 'Speaking Opportunities' },
 ]

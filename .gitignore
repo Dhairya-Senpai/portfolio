@@ -1,3 +1,6 @@
 README.md
 node_modules
 public\robots.txt
+dist
+public/resume.pdf
+# src/components/chatbot.tsx
