@@ -11,6 +11,15 @@
     <link rel="stylesheet" crossorigin href="/portfolio/assets/index-CXkrI5Q-.css">
   </head>
   <body>
+    <script>
+      (function() {
+        var redirect = sessionStorage.getItem('redirect');
+        if (redirect) {
+          sessionStorage.removeItem('redirect');
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
     <div id="root"></div>
   </body>
 </html>
